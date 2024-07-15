@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: ffffff;
+    line-height: 1.7;
+    color: #432;
+}
+
+header
+
+#main_title {
+    font-size: 80px;
+    text-align: center;
+    margin: 40px 0 40px;
+}
+
+#text_1 {
+    text-align: center;
+    margin: 40px 0 40px;
+}
+
+#title_1 {
+    font-size: 50px;
+}
+
+footer {
+    background-color: grey;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
