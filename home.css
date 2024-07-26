@@ -23,17 +23,17 @@ header {
 main {
     text-align: center;
     color: #de4d4d;
-    margin: 0 200px 0 200px;
+    margin: 0 300px 0 300px;
 }
 
 #main_title {
-    font-size: 100px;
+    font-size: 110px;
     text-align: center;
-    margin: 40px 0 40px;
 }
 
 .welcome {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: Dancing Script;
 }
 
 #date {
@@ -45,6 +45,11 @@ main {
     font-size: 20px;
     text-align: left;
     margin: 40px 0 30px 40px;
+}
+
+.line {
+    border-bottom: 3px solid #f67690;
+    margin: 30px 0 20px;
 }
 
 .explain {
