@@ -44,13 +44,25 @@ main {
     width: 800px;
     font-size: 20px;
     text-align: left;
-    margin: 0 0 30px 20px;
+    margin: 40px 0 30px 40px;
 }
 
 .explain {
     font-size: 20px;
     text-align: left;
-    margin: 0 0 20px 40px;
+    margin: 0 0 0 20px;
+}
+
+#method {
+    margin: 0 0 0 50px;
+}
+
+#flavor {
+    margin: 0 0 0 50px;
+}
+
+.example {
+    margin: 0 0 0 20px;
 }
 
 footer {
