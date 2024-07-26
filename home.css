@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@media (min-width: 800px) {
+    /* ヘッダー */
+    .header {
+        font-size: 5rem;
+    }
+}
+
 html {
     font-size: 100%;
 }
@@ -7,15 +14,16 @@ html {
 body {
     background-color: ffffff;
     line-height: 1.7;
-    color: #de4d4d;
 }
 
 header {
     text-align: center;
+    color: #de4d4d;
 }
 
 main {
     text-align: center;
+    color: #de4d4d;
 }
 
 #main_title {
@@ -33,20 +41,22 @@ main {
 }
 
 .sub_title {
-    font-size: 30px;
+    width: 800px;
+    font-size: 20px;
     text-align: left;
-    margin: 0 0 0 20px;
+    margin: 0 0 30px 20px;
 }
 
 .explain {
     font-size: 20px;
     text-align: left;
-    margin: 0 0 0 40px;
+    margin: 0 0 20px 40px;
 }
 
 footer {
-    background-color: #cccccc;
+    background-color: grey;
+    color: #ffffff;
     font-size: 20px;
     text-align: center;
-    padding: 40px 0 40px 0;
+    padding: 50px 0 50px 0;
 }
