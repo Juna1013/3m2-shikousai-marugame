@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @media (min-width: 800px) {
     /* ヘッダー */
     .header {
@@ -24,6 +23,7 @@ header {
 main {
     text-align: center;
     color: #de4d4d;
+    margin: 0 200px 0 200px;
 }
 
 #main_title {
