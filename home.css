@@ -19,13 +19,29 @@ main {
 }
 
 #main_title {
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
     margin: 40px 0 40px;
 }
 
-.title {
-    font-size: 50px;
+.welcome {
+    font-size: 60px;
+}
+
+#date {
+    font-size: 20px;
+}
+
+.sub_title {
+    font-size: 30px;
+    text-align: left;
+    margin: 0 0 0 20px;
+}
+
+.explain {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 0 0 40px;
 }
 
 footer {
