@@ -7,10 +7,16 @@ html {
 body {
     background-color: ffffff;
     line-height: 1.7;
-    color: #432;
+    color: #de4d4d;
 }
 
-header
+header {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
 
 #main_title {
     font-size: 80px;
@@ -18,17 +24,12 @@ header
     margin: 40px 0 40px;
 }
 
-.text {
-    text-align: center;
-    margin: 40px 0 40px;
-}
-
-#title_1 {
+.title {
     font-size: 50px;
 }
 
 footer {
-    background-color: grey;
+    background-color: #cccccc;
     font-size: 20px;
     text-align: center;
     padding: 40px 0 40px 0;
