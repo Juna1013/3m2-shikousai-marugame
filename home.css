@@ -77,6 +77,12 @@ main {
 .date {
     font-size: 1.2rem;
     font-weight: 500;
+    color:#ffffff;
+}
+
+#countdown {
+    color:#ffffff;
+    font-size: 1.2rem;
 }
 
 .info-section {
@@ -178,5 +184,53 @@ footer {
 
     .ingredient-group + .ingredient-group {
         margin-top: 1rem;
+    }
+
+    #countdown {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        color: var(--primary-color);
+    }
+    
+    #crepe-steps li {
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+    }
+    
+    #crepe-steps li.active {
+        opacity: 1;
+        font-weight: 700;
+    }
+    
+    .carousel {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #prev-btn, #next-btn {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #prev-btn {
+        left: 0;
+    }
+
+    #next-btn {
+        right: 0;
     }
 }

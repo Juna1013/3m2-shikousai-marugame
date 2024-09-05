@@ -7,6 +7,7 @@
     <meta name="description" content="3M2のサークル内容について紹介">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=M+PLUS+Rounded+1c:wght@300;400;700&family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,6 +27,7 @@
                 <p>Day1 08:00 - 18:00</p>
                 <p>Day2 08:00 - 16:00</p>
             </div>
+            <div id="countdown"></div>
         </section>
 
         <section class="info-section">
@@ -36,10 +38,10 @@
 
             <div class="info-card">
                 <h2>クレープのつくり方</h2>
-                <ol>
+                <ol id="crepe-steps">
                     <li>入口でクレープの生地を購入</li>
                     <li>ホイップクリームをかける</li>
-                    <li>好きな具材を選んで盛りつけ</li>
+                    <li>好きな具材を選んで盛りつける</li>
                     <li>トッピングをかけたら完成！</li>
                 </ol>
             </div>
@@ -67,8 +69,8 @@
 
             <div class="info-card">
                 <h2>具材一覧（予定）</h2>
-                <div class="ingredients">
-                    <div class="ingredient-group">
+                <div id="ingredients-carousel" class="carousel">
+                    <div class="carousel-item">
                         <h3>フルーツ</h3>
                         <ul>
                             <li>いちご</li>
@@ -78,7 +80,7 @@
                             <li>パイナップル</li>
                         </ul>
                     </div>
-                    <div class="ingredient-group">
+                    <div class="carousel-item">
                         <h3>トッピング</h3>
                         <ul>
                             <li>チョコソース</li>
