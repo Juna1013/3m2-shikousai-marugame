@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Countdown
+    // 開店までのカウントダウン
     const countdownElement = document.getElementById('countdown');
     const eventDate = new Date('2024-10-26T08:00:00').getTime();
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const countdownTimer = setInterval(updateCountdown, 1000);
 
-    // Carousel
+    // カーソル
     const carousel = document.querySelector('.carousel');
     const items = carousel.querySelectorAll('.carousel-item');
     const prevBtn = document.getElementById('prev-btn');
