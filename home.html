@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NITIC 3M2 丸亀式クレープ</title>
-    <meta name="description" content="3M2のサークル内容について紹介">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <title>丸亀式クレープ - 3M2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-    <script src="home.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=M+PLUS+Rounded+1c:wght@300;400;700&family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,12 +18,13 @@
     <main>
         <section class="welcome-section">
             <h2 class="welcome">Welcome to 3M2!</h2>
-            <div class="date">
-                <p>2024</p>
-                <p>10/26 Sat ▶ 10/27 Sun</p>
-                <p>Day1 08:00 - 18:00</p>
-                <p>Day2 08:00 - 16:00</p>
-            </div>
+            <p class="date">
+                2024<br>
+                10/26 Sat ▶ 10/27 Sun<br>
+                Day1 08:00 - 18:00<br>
+                Day2 08:00 - 16:00
+            </p>
+            <div id="countdown"></div>
         </section>
 
         <section class="info-section">
@@ -68,7 +66,7 @@
 
             <div class="info-card">
                 <h2>具材一覧（予定）</h2>
-                <div id="ingredients-carousel" class="carousel">
+                <div class="carousel">
                     <div class="carousel-item">
                         <h3>フルーツ</h3>
                         <ul>
@@ -88,8 +86,9 @@
                         </ul>
                     </div>
                 </div>
+                <button id="prev-btn">&lt;</button>
+                <button id="next-btn">&gt;</button>
             </div>
-            
 
             <div class="info-card">
                 <h2>場所</h2>
@@ -101,5 +100,7 @@
     <footer>
         <p>NITIC 3M2 丸亀式クレープ</p>
     </footer>
+
+    <script src="home.js"></script>
 </body>
 </html>

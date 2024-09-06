@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
 :root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #f67690;
-    --background-color: #fff9f9;
-    --text-color: #2d3436;
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
     --card-background: #ffffff;
-    --header-font: 'Yusei Magic', sans-serif;
-    --body-font: 'M PLUS Rounded 1c', sans-serif;
-    --accent-font: 'Dancing Script', cursive;
+    --header-font: 'Playfair Display', serif;
+    --body-font: 'Noto Sans JP', sans-serif;
 }
 
 html {
@@ -17,9 +16,11 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
+    background: linear-gradient(135deg, var(--background-color), #bdc3c7);
     line-height: 1.6;
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
@@ -31,19 +32,19 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #main-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: white;
     margin-top: 1rem;
     font-weight: 700;
@@ -60,16 +61,14 @@ main {
 .welcome-section {
     text-align: center;
     margin-bottom: 3rem;
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     padding: 2rem;
     border-radius: 10px;
-    color: var(--text-color);
+    color: white;
 }
 
 .welcome {
-    font-size: 4rem;
-    font-family: var(--accent-font);
-    color: white;
+    font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -77,8 +76,12 @@ main {
 .date {
     font-size: 1.2rem;
     font-weight: 500;
-    color:#ffffff;
+}
 
+#countdown {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
 .info-section {
@@ -123,28 +126,40 @@ main {
     color: var(--primary-color);
 }
 
-.ingredients {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+.carousel {
+    position: relative;
+    overflow: hidden;
 }
 
-.ingredient-group {
-    flex: 1 1 200px;
+.carousel-item {
+    display: none;
 }
 
-.ingredient-group h3 {
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
+.carousel-item.active {
+    display: block;
 }
 
-ul, ol {
-    padding-left: 1.5rem;
+#prev-btn, #next-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev-btn {
+    left: 0;
+}
+
+#next-btn {
+    right: 0;
 }
 
 footer {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: #ffffff;
     text-align: center;
     padding: 2rem;
@@ -159,75 +174,18 @@ footer {
     }
 
     .logo {
-        max-width: 150px;
+        max-width: 120px;
     }
 
     #main-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .welcome {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .info-section {
         grid-template-columns: 1fr;
     }
-
-    .ingredients {
-        flex-direction: column;
-    }
-
-    .ingredient-group + .ingredient-group {
-        margin-top: 1rem;
-    }
-
-    #countdown {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-top: 1rem;
-        color: var(--primary-color);
-    }
-    
-    #crepe-steps li {
-        opacity: 0.5;
-        transition: opacity 0.3s ease;
-    }
-    
-    #crepe-steps li.active {
-        opacity: 1;
-        font-weight: 700;
-    }
-    
-    .carousel {
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        height: auto;
-    }
-    
-    .carousel-item {
-        flex: 0 0 100%;
-        transition: transform 0.5s ease-in-out;
-    }
-    
-    #prev-btn, #next-btn {
-        background-color: var(--primary-color);
-        color: white;
-        padding: 0.5rem 1rem;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    #prev-btn {
-        left: 0;
-    }
-    
-    #next-btn {
-        right: 0;
-    }
-    
 }
