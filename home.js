@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 開店までのカウントダウン
     const countdownElement = document.getElementById('countdown');
+    const ingredientsContent = document.getElementById('ingredients-content');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    const ingredients = [
+        { category: 'フルーツ', items: ['いちご', 'バナナ', '白桃', 'みかん', 'パイナップル'] },
+        { category: 'トッピング', items: ['チョコソース', 'イチゴソース', 'カラースプレー', 'ホイップクリーム', 'アイスクリーム'] }
+    ];
+
+    let currentItem = 0;
+
+    // Countdown timer
     const eventDate = new Date('2024-10-26T08:00:00').getTime();
 
     function updateCountdown() {
@@ -22,41 +33,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const countdownTimer = setInterval(updateCountdown, 1000);
 
-    // カーソル
-    const carousel = document.querySelector('.carousel');
-    const items = carousel.querySelectorAll('.carousel-item');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    let currentItem = 0;
-
-    function showItem(index) {
-        items.forEach((item, i) => {
-            item.classList.toggle('active', i === index);
-        });
+    // Ingredients carousel
+    function renderIngredients() {
+        ingredientsContent.innerHTML = ingredients.map((category, index) => `
+            <div class="w-full flex-shrink-0">
+                <h3 class="text-xl font-semibold mb-2">${category.category}</h3>
+                <ul class="list-disc list-inside">
+                    ${category.items.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            </div>
+        `).join('');
     }
 
+    function showItem(index) {
+        ingredientsContent.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    renderIngredients();
+
     prevBtn.addEventListener('click', () => {
-        currentItem = (currentItem - 1 + items.length) % items.length;
+        currentItem = (currentItem - 1 + ingredients.length) % ingredients.length;
         showItem(currentItem);
     });
 
     nextBtn.addEventListener('click', () => {
-        currentItem = (currentItem + 1) % items.length;
+        currentItem = (currentItem + 1) % ingredients.length;
         showItem(currentItem);
     });
 
-    showItem(currentItem);
-
-    // Crepe steps animation
-    const steps = document.querySelectorAll('#crepe-steps li');
-    let currentStep = 0;
-
-    function highlightStep() {
-        steps.forEach((step, index) => {
-            step.classList.toggle('active', index === currentStep);
-        });
-        currentStep = (currentStep + 1) % steps.length;
-    }
-
-    setInterval(highlightStep, 2000);
+    // Initialize Lucide icons
+    lucide.createIcons();
 });

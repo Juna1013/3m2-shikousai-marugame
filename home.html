@@ -4,77 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>丸亀式クレープ - 3M2</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <img src="3M2サークルカット.png" alt="ロゴ" class="logo">
-            <h1 id="main-title">丸亀式クレープ</h1>
+<body class="bg-gradient-to-br from-pink-100 to-red-100 min-h-screen">
+    <header class="bg-gradient-to-r from-red-500 to-pink-500 text-white py-6">
+        <div class="container mx-auto text-center">
+            <img src="3M2サークルカット.png" alt="ロゴ" class="w-32 h-32 mx-auto rounded-full shadow-lg">
+            <h1 class="text-4xl font-bold mt-4 font-serif">丸亀式クレープ</h1>
         </div>
     </header>
 
-    <main>
-        <section class="welcome-section">
-            <h2 class="welcome">Welcome to 3M2!</h2>
-            <p class="date">
-                2024<br>
-                10/26 Sat ▶ 10/27 Sun<br>
-                Day1 08:00 - 18:00<br>
-                Day2 08:00 - 16:00
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-center text-red-600 mb-4">Welcome to 3M2!</h2>
+            <p class="text-center text-xl mb-4">
+                <div class="text-center">2024年 10/26(土) ▶ 10/27(日)</div>
+                <div class="text-center">1日目: 08:00 - 18:00</div>
+                <div class="text-center">2日目: 08:00 - 16:00</div>
             </p>
-            <div id="countdown"></div>
+            <div id="countdown" class="text-center text-2xl font-bold text-red-500"></div>
         </section>
 
-        <div class="scroll-infinity">
-            <div class="scroll-infinity__wrap">
-              <ul class="scroll-infinity__list scroll-infinity__list--left">
-                <li class="scroll-infinity__item"><img src="クレープ①（加工前）.jpg" /></li>                        
-                <li class="scroll-infinity__item"><img src="クレープ②（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ③（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ①（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ②（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ③（加工前）.jpg" /></li>
-              </ul>
-              <ul class="scroll-infinity__list scroll-infinity__list--left">
-                <li class="scroll-infinity__item"><img src="クレープ①（加工前）.jpg" /></li>                    
-                <li class="scroll-infinity__item"><img src="クレープ②（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ③（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ①（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ②（加工前）.jpg" /></li>
-                <li class="scroll-infinity__item"><img src="クレープ③（加工前）.jpg" /></li>
-              </ul>
-            </div>
-        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <section class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-4 text-red-600">丸亀式クレープとは？</h2>
+                <p class="text-lg">
+                    丸亀式クレープとは、うどんチェーンで有名な丸亀うどんが販売していた自分で具材を選ぶクレープです。
+                    3M2では茨香祭限定で販売いたします！
+                </p>
+            </section>
 
-        <section class="info-section">
-            <div class="info-card">
-                <h2>丸亀式クレープとは？</h2>
-                <p>丸亀式クレープとは、うどんチェーンで有名な丸亀うどんが販売していた自分で具材を選ぶクレープです。3M2では茨香祭限定で販売いたします！</p>
-            </div>
-
-            <div class="info-card">
-                <h2>クレープのつくり方</h2>
-                <ol id="crepe-steps">
-                    <li>入口でクレープの生地を購入</li>
-                    <li>ホイップクリームをかける</li>
-                    <li>好きな具材を選んで盛りつける</li>
+            <section class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-4 text-red-600">クレープのつくり方</h2>
+                <ol class="list-decimal list-inside text-lg">
+                    <li class="mb-2">入口でクレープの生地を購入</li>
+                    <li class="mb-2">ホイップクリームをかける</li>
+                    <li class="mb-2">好きな具材を選んで盛りつける</li>
                     <li>トッピングをかけたら完成！</li>
                 </ol>
-            </div>
+            </section>
 
-            <div class="info-card">
-                <h2>メニュー・料金（予定）</h2>
-                <div class="menu-pricing">
-                    <div class="menu-item">
-                        <h3>丸亀式クレープ</h3>
-                        <p class="price">各500円</p>
+            <section class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-4 text-red-600">メニュー・料金</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">丸亀式クレープ</h3>
+                        <p class="text-lg font-bold text-red-500">各500円</p>
                     </div>
-                    <div class="menu-item">
-                        <h3>各種ドリンク</h3>
-                        <p class="price">各150円</p>
-                        <ul>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">各種ドリンク</h3>
+                        <p class="text-lg font-bold text-red-500">各150円</p>
+                        <ul class="list-disc list-inside">
                             <li>コーラ</li>
                             <li>メロンソーダ</li>
                             <li>レモネード</li>
@@ -83,48 +73,49 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="info-card">
-                <h2>具材一覧（予定）</h2>
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <h3>フルーツ</h3>
-                        <ul>
-                            <li>いちご</li>
-                            <li>バナナ</li>
-                            <li>白桃</li>
-                            <li>みかん</li>
-                            <li>パイナップル</li>
-                        </ul>
+            <section class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-4 text-red-600">具材一覧</h2>
+                <div class="relative">
+                    <div id="ingredients-carousel" class="overflow-hidden">
+                        <div id="ingredients-content" class="transition-all duration-300 ease-in-out flex">
+                            <!-- Content will be dynamically inserted here -->
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <h3>トッピング</h3>
-                        <ul>
-                            <li>チョコソース</li>
-                            <li>イチゴソース</li>
-                            <li>カラースプレー</li>
-                        </ul>
-                    </div>
+                    <button id="prev-btn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-2 rounded-full">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button id="next-btn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-2 rounded-full">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
                 </div>
-                <button id="prev-btn">&lt;</button>
-                <button id="next-btn">&gt;</button>
-            </div>
+            </section>
+        </div>
 
-            <div class="info-card">
-                <h2>場所</h2>
-                <p>茨城高専8号館1階102号室</p>
-            </div>
-
-            <div class="info-card">
-                <h2>3M2から一言</h2>
-                <p>ぜひお越しください！</p>
+        <section class="bg-white rounded-lg shadow-lg p-8 mt-8">
+            <h2 class="text-2xl font-bold mb-4 text-red-600">イベント情報</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="flex items-center">
+                    <i data-lucide="map-pin" class="text-red-500 mr-2"></i>
+                    <p class="text-lg">茨城高専8号館1階102号室</p>
+                </div>
+                <div class="flex items-center">
+                    <i data-lucide="coffee" class="text-red-500 mr-2"></i>
+                    <p class="text-lg">10種類以上の具材をご用意！</p>
+                </div>
+                <div class="flex items-center">
+                    <i data-lucide="clock" class="text-red-500 mr-2"></i>
+                    <p class="text-lg">開店直後がオススメ！</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>NITIC 3M2 丸亀式クレープ</p>
+    <footer class="bg-gradient-to-r from-red-500 to-pink-500 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p class="text-lg">NITIC 3M2 丸亀式クレープ</p>
+        </div>
     </footer>
 
     <script src="home.js"></script>
