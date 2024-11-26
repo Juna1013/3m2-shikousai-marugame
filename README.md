@@ -8,3 +8,8 @@
 - 骨組み：HTML
 - デザイン・レイアウト：TailwindCSS
 - 動的部分：JavaScript、jQuery
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,tailwindcss,vercel,javascript,jquery" />
+  </a>
+</p>
