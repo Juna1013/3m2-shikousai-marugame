@@ -8,10 +8,7 @@
 出店サークルの広報のため
 
 ## 技術スタック
-- 骨組み：HTML
-- デザイン類：CSS、TailwindCSS
-- 動的部分：JavaScript、jQuery
-- サーバー：Vercel
+
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=html,css,tailwindcss,javascript,jquery,vercel" />
