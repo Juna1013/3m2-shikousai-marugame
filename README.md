@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,javascript" />
-    <img src="https://skillicons.dev/icons?i=tailwindcss,jquery,vercel" />
+    <img src="https://skillicons.dev/icons?i=html,css,javascript" /></br>
+    <img src="https://skillicons.dev/icons?i=tailwindcss,jquery,vercel" /></br>
   </a>
 </p>
 
