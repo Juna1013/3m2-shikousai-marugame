@@ -1,16 +1,3 @@
-# 3M2 丸亀クレープ
-
-## 概要
-- 文化祭のクラスサークルの広報として開発および運用したWebページ
-- サークルの実施場所やメニュー表などを掲載
-
-## 運用目的
-出店サークルの広報のため
-
-## 開発体験談
-https://qiita.com/juna1013/items/6f54b281c2338944d923
-
-
 <p align="center" dir="auto">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Juna1013/3m2-shikousai-marugame/blob/main/3M2%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB%E3%82%AB%E3%83%83%E3%83%88.png?raw=true">
@@ -34,3 +21,6 @@ https://qiita.com/juna1013/items/6f54b281c2338944d923
 - Jsフレームワーク：Next.js
 - CSSフレームワーク：TailwindCSS
 - デプロイ先：Vercel
+
+## 開発体験談
+https://qiita.com/juna1013/items/6f54b281c2338944d923
