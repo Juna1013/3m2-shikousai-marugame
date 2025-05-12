@@ -18,9 +18,11 @@
 - 2024年度の茨香祭のクラスサークルの広報のため
 
 ### 技術スタック
-- Jsフレームワーク：Next.js
-- CSSフレームワーク：TailwindCSS
-- デプロイ先：Vercel
+- **HTML** 📄｜Webページの骨組み
+- **TailwindCSS** 🎨｜CSSフレームワーク
+- **jQuery** 🧱 | Jsフレームワーク
+- **Vercel** ☁️｜ホスティングサービス
+- **Markdown** ✍️｜READMEやドキュメント記述用
 
 ## 開発体験談
 https://qiita.com/juna1013/items/6f54b281c2338944d923
